@@ -18,7 +18,7 @@ void Parser::CreateTemporaryLPFile(){
 
     std::ifstream inFile(OrgFile);
     if (!inFile) {
-        std::cerr << "Error: Could not open OrgFile.lp for reading." << std::endl;
+        std::cerr << "Error: Could not open " << OrgFile <<" for reading." << std::endl;
         return;
     }
     

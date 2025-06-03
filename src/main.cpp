@@ -50,9 +50,8 @@ int main(int argc, char* argv[]) {
     InstanceParser.CreateTemporaryLPFile();
 
     QISSolver Solver(InstanceParser,Start,timeLimit);
-    bool Solved=Solver.Solve();
-
     InstanceParser.RemoveTemporaryFile();
+    bool Solved=Solver.Solve();
 
     steady_clock::duration timer = chrono::steady_clock::now() - Start;
     if(!Solved && chrono::duration_cast<milliseconds>(timer).count()/(double)1000 > timeLimit)
