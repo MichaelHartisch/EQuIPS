@@ -1,0 +1,351 @@
+MAXIMIZE
++ alpha_1 + alpha_2 + alpha_3 + alpha_4 + alpha_5 + alpha_6 + alpha_7 + alpha_8 + alpha_9 + alpha_10 + alpha_11 + alpha_12 + alpha_13 + alpha_14 + alpha_15 + alpha_16 + alpha_17 + alpha_18 + alpha_19 + alpha_20 
+SUBJECT TO
++ z_1 + z_2 + z_3 + z_4 + z_5 + z_6 + z_7 + z_8 + z_9 + z_10 + z_11 + z_12 + z_13 + z_14 + z_15 + z_16 + z_17 + z_18 + z_19 + z_20 <= 1
++ x_1 + x_2 + x_3 + x_4 + x_5 + x_6 + x_7 + x_8 + x_9 + x_10 + x_11 + x_12 + x_13 + x_14 + x_15 + x_16 + x_17 + x_18 + x_19 + x_20 <= 1
++ alpha_1 - z_1 + y_1 <= 1
++ alpha_2 - z_2 + y_2 <= 1
++ alpha_3 - z_3 + y_3 <= 1
++ alpha_4 - z_4 + y_4 <= 1
++ alpha_5 - z_5 + y_5 <= 1
++ alpha_6 - z_6 + y_6 <= 1
++ alpha_7 - z_7 + y_7 <= 1
++ alpha_8 - z_8 + y_8 <= 1
++ alpha_9 - z_9 + y_9 <= 1
++ alpha_10 - z_10 + y_10 <= 1
++ alpha_11 - z_11 + y_11 <= 1
++ alpha_12 - z_12 + y_12 <= 1
++ alpha_13 - z_13 + y_13 <= 1
++ alpha_14 - z_14 + y_14 <= 1
++ alpha_15 - z_15 + y_15 <= 1
++ alpha_16 - z_16 + y_16 <= 1
++ alpha_17 - z_17 + y_17 <= 1
++ alpha_18 - z_18 + y_18 <= 1
++ alpha_19 - z_19 + y_19 <= 1
++ alpha_20 - z_20 + y_20 <= 1
++ alpha_13 - alpha_1 - x_13 - z_13 <= 0
++ alpha_1 - alpha_13 - x_1 - z_1 <= 0
++ alpha_19 - alpha_1 - x_19 - z_19 <= 0
++ alpha_1 - alpha_19 - x_1 - z_1 <= 0
++ alpha_4 - alpha_2 - x_4 - z_4 <= 0
++ alpha_2 - alpha_4 - x_2 - z_2 <= 0
++ alpha_14 - alpha_2 - x_14 - z_14 <= 0
++ alpha_2 - alpha_14 - x_2 - z_2 <= 0
++ alpha_18 - alpha_3 - x_18 - z_18 <= 0
++ alpha_3 - alpha_18 - x_3 - z_3 <= 0
++ alpha_15 - alpha_7 - x_15 - z_15 <= 0
++ alpha_7 - alpha_15 - x_7 - z_7 <= 0
++ alpha_20 - alpha_9 - x_20 - z_20 <= 0
++ alpha_9 - alpha_20 - x_9 - z_9 <= 0
++ alpha_13 - alpha_12 - x_13 - z_13 <= 0
++ alpha_12 - alpha_13 - x_12 - z_12 <= 0
++ alpha_18 - alpha_17 - x_18 - z_18 <= 0
++ alpha_17 - alpha_18 - x_17 - z_17 <= 0
+UNCERTAINTY SUBJECT TO
++ y_1 + y_2 + y_3 + y_4 + y_5 + y_6 + y_7 + y_8 + y_9 + y_10 + y_11 + y_12 + y_13 + y_14 + y_15 + y_16 + y_17 + y_18 + y_19 + y_20 <= 1
+BOUNDS
+0 <= x_1 <= 1
+0 <= y_1 <= 1
+0 <= z_1 <= 1
+0 <= alpha_1 <= 1
+0 <= x_2 <= 1
+0 <= y_2 <= 1
+0 <= z_2 <= 1
+0 <= alpha_2 <= 1
+0 <= x_3 <= 1
+0 <= y_3 <= 1
+0 <= z_3 <= 1
+0 <= alpha_3 <= 1
+0 <= x_4 <= 1
+0 <= y_4 <= 1
+0 <= z_4 <= 1
+0 <= alpha_4 <= 1
+0 <= x_5 <= 1
+0 <= y_5 <= 1
+0 <= z_5 <= 1
+0 <= alpha_5 <= 1
+0 <= x_6 <= 1
+0 <= y_6 <= 1
+0 <= z_6 <= 1
+0 <= alpha_6 <= 1
+0 <= x_7 <= 1
+0 <= y_7 <= 1
+0 <= z_7 <= 1
+0 <= alpha_7 <= 1
+0 <= x_8 <= 1
+0 <= y_8 <= 1
+0 <= z_8 <= 1
+0 <= alpha_8 <= 1
+0 <= x_9 <= 1
+0 <= y_9 <= 1
+0 <= z_9 <= 1
+0 <= alpha_9 <= 1
+0 <= x_10 <= 1
+0 <= y_10 <= 1
+0 <= z_10 <= 1
+0 <= alpha_10 <= 1
+0 <= x_11 <= 1
+0 <= y_11 <= 1
+0 <= z_11 <= 1
+0 <= alpha_11 <= 1
+0 <= x_12 <= 1
+0 <= y_12 <= 1
+0 <= z_12 <= 1
+0 <= alpha_12 <= 1
+0 <= x_13 <= 1
+0 <= y_13 <= 1
+0 <= z_13 <= 1
+0 <= alpha_13 <= 1
+0 <= x_14 <= 1
+0 <= y_14 <= 1
+0 <= z_14 <= 1
+0 <= alpha_14 <= 1
+0 <= x_15 <= 1
+0 <= y_15 <= 1
+0 <= z_15 <= 1
+0 <= alpha_15 <= 1
+0 <= x_16 <= 1
+0 <= y_16 <= 1
+0 <= z_16 <= 1
+0 <= alpha_16 <= 1
+0 <= x_17 <= 1
+0 <= y_17 <= 1
+0 <= z_17 <= 1
+0 <= alpha_17 <= 1
+0 <= x_18 <= 1
+0 <= y_18 <= 1
+0 <= z_18 <= 1
+0 <= alpha_18 <= 1
+0 <= x_19 <= 1
+0 <= y_19 <= 1
+0 <= z_19 <= 1
+0 <= alpha_19 <= 1
+0 <= x_20 <= 1
+0 <= y_20 <= 1
+0 <= z_20 <= 1
+0 <= alpha_20 <= 1
+BINARIES
+x_1
+y_1
+z_1
+x_2
+y_2
+z_2
+x_3
+y_3
+z_3
+x_4
+y_4
+z_4
+x_5
+y_5
+z_5
+x_6
+y_6
+z_6
+x_7
+y_7
+z_7
+x_8
+y_8
+z_8
+x_9
+y_9
+z_9
+x_10
+y_10
+z_10
+x_11
+y_11
+z_11
+x_12
+y_12
+z_12
+x_13
+y_13
+z_13
+x_14
+y_14
+z_14
+x_15
+y_15
+z_15
+x_16
+y_16
+z_16
+x_17
+y_17
+z_17
+x_18
+y_18
+z_18
+x_19
+y_19
+z_19
+x_20
+y_20
+z_20
+EXISTS
+x_1
+z_1
+alpha_1
+x_2
+z_2
+alpha_2
+x_3
+z_3
+alpha_3
+x_4
+z_4
+alpha_4
+x_5
+z_5
+alpha_5
+x_6
+z_6
+alpha_6
+x_7
+z_7
+alpha_7
+x_8
+z_8
+alpha_8
+x_9
+z_9
+alpha_9
+x_10
+z_10
+alpha_10
+x_11
+z_11
+alpha_11
+x_12
+z_12
+alpha_12
+x_13
+z_13
+alpha_13
+x_14
+z_14
+alpha_14
+x_15
+z_15
+alpha_15
+x_16
+z_16
+alpha_16
+x_17
+z_17
+alpha_17
+x_18
+z_18
+alpha_18
+x_19
+z_19
+alpha_19
+x_20
+z_20
+alpha_20
+ALL
+y_1
+y_2
+y_3
+y_4
+y_5
+y_6
+y_7
+y_8
+y_9
+y_10
+y_11
+y_12
+y_13
+y_14
+y_15
+y_16
+y_17
+y_18
+y_19
+y_20
+ORDER
+z_1
+z_2
+z_3
+z_4
+z_5
+z_6
+z_7
+z_8
+z_9
+z_10
+z_11
+z_12
+z_13
+z_14
+z_15
+z_16
+z_17
+z_18
+z_19
+z_20
+y_1
+y_2
+y_3
+y_4
+y_5
+y_6
+y_7
+y_8
+y_9
+y_10
+y_11
+y_12
+y_13
+y_14
+y_15
+y_16
+y_17
+y_18
+y_19
+y_20
+x_1
+x_2
+x_3
+x_4
+x_5
+x_6
+x_7
+x_8
+x_9
+x_10
+x_11
+x_12
+x_13
+x_14
+x_15
+x_16
+x_17
+x_18
+x_19
+x_20
+alpha_1
+alpha_2
+alpha_3
+alpha_4
+alpha_5
+alpha_6
+alpha_7
+alpha_8
+alpha_9
+alpha_10
+alpha_11
+alpha_12
+alpha_13
+alpha_14
+alpha_15
+alpha_16
+alpha_17
+alpha_18
+alpha_19
+alpha_20
+END
