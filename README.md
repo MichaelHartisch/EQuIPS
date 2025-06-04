@@ -5,7 +5,7 @@ EQuIPS is an expansion-based solver for Quantified Integer Programs
 1. Install Gurobi. Make sure that environment variable GUROBI_HOME is set.
 2. run "cmake -B build"
 3. run "cmake --build build"
-4. in the "build" folder run ".\EQuIPS *instance*" (as a first test you can run ./EQuIPS ../instances/MiniMCN.qlp)
+4. in the "build" folder run "./EQuIPS *instance*" (as a first test you can run ./EQuIPS ../instances/MiniMCN.qlp)
 
 # File Format
 Instances must be in the QLP file format [(see this documentation)](https://yasolqipsolver.github.io/yasol.github.io/About_Yasol/#the-qlp-file-format). 
