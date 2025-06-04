@@ -19,8 +19,8 @@ else(GUROBI_FOUND)
   message(FATAL_ERROR "!!! GUROBI NOT FOUND !!!")
 endif(GUROBI_FOUND)
 
-message("C_GUROBI_LIB points to " ${C_GUROBI_LIB})
-message("CPP_GUROBI_LIB points to " ${CPP_GUROBI_LIB})
+#message("C_GUROBI_LIB points to " ${C_GUROBI_LIB})
+#message("CPP_GUROBI_LIB points to " ${CPP_GUROBI_LIB})
 message("GUROBI_LIBRARY points to " ${GUROBI_LIBRARY})
 message("GUROBI_CXX_LIBRARY points to " ${GUROBI_CXX_LIBRARY})
 message("GUROBI_INCLUDE_DIRS points to " ${GUROBI_INCLUDE_DIRS})
@@ -31,9 +31,13 @@ set(sources src/main.cpp src/Parser.cpp src/Solver.cpp src/MultiGame.cpp src/Mov
 set(CMAKE_CXX_STANDARD 17)
 
 add_executable(EQuIPS ${sources} )
-target_link_libraries(EQuIPS ${GUROBI_CXX_LIBRARY})
-#target_link_libraries(EQuIPS optimized ${GUROBI_CXX_LIBRARY})
-target_link_libraries(EQuIPS ${GUROBI_LIBRARY})
+target_include_directories(EQuIPS PRIVATE ${GUROBI_INCLUDE_DIRS})
+target_link_libraries(EQuIPS
+    PRIVATE
+        ${GUROBI_CXX_LIBRARY}    # Static C++ wrapper
+        ${GUROBI_LIBRARY}        # Shared core lib (e.g. libgurobi100.so)
+        pthread dl m stdc++      # Required system libs
+)
 option(ENABLE_SANITIZERS "Enable sanitizers for debugging" OFF)
 
 # Add sanitizer flags if the option is enabled
