@@ -14,7 +14,7 @@ find_package(GUROBI REQUIRED)
 include_directories(${GUROBI_INCLUDE_DIRS} "${CMAKE_SOURCE_DIR}/include")
 
 if(GUROBI_FOUND)
-  message(STATUS "GUROBI FOUND!")
+  #message(STATUS "GUROBI FOUND!")
 else(GUROBI_FOUND)
   message(FATAL_ERROR "!!! GUROBI NOT FOUND !!!")
 endif(GUROBI_FOUND)
